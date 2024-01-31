@@ -1,0 +1,28 @@
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    background-color: red;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.diet {
+    height: 10vh;
+    width: 50vw;
+    /* background-color: beige; */
+}
+
+.excercise {
+    height: 10vh;
+    width: 50vw;
+}

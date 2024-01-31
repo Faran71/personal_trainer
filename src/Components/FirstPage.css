@@ -1,0 +1,38 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: red;
+    gap: 20vh;
+}
+
+.btn-container {
+    overflow: hidden;
+    border-style: solid;
+    width: 20vw;
+    border-radius: 90vh;
+}
+
+.btn {
+    /* padding: 0px; */
+    border-radius: 100%;
+    background-color: whitesmoke;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: translateX(8.5vw);
+    background-color: red;
+}
+
+.btn img {
+    height: 10vw;
+    scale: 1.7;
+    padding-top: 3.3px;
+    
+}
