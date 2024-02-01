@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import FirstPage from './Components/FirstPage';
-import SecondPage from './Components/SecondPage';
+import FirstPage from './Containers/FirstPage';
+import SecondPage from './Containers/SecondPage';
 import { useState } from 'react';
-import MainPage from './Components/MainPage';
+import MainPage from './Containers/MainPage';
+import WorkoutPlan from './Containers/WorkoutPlan';
 
 function App() {
 
@@ -34,6 +35,9 @@ const [weight, setWeight] = useState(null);
           weight={weight}
           selectedAge={selectedAge}/>} 
           key={3}/>
+          <Route path='/WorkoutPlan'
+          element={<WorkoutPlan />}
+          key={4}/>
         </Routes>
       </BrowserRouter>
     </div>
