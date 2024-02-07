@@ -1,13 +1,18 @@
 .table {
-    width: 100vw;
-    height: 20vh;
+    width: 50vw;
+    /* height: 20vh; */
+    margin-left: 25vw;
 }
 
 .table th {
     border: 1px solid;
     background-color: red;
-    margin-bottom: 5vh;
+    /* margin-bottom: 5vh; */
+    width: 20vw;
+    height: 5vh;
 }
 .table td {
     border: 1px solid;
+    width: 20vw;
+    text-align: center;
 }

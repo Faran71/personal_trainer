@@ -1,33 +1,33 @@
 import "./Table.css"
 
-const ThreeTimes = () => {
+const FiveTimes = () => {
 
     return(
         <div>
             <table className="table">
                 <tr>
                     <th>Monday</th>
-                    <td>Rest</td>
+                    <td>Chest and Back</td>
                 </tr>
                 <tr>
                     <th>Tuesday</th>
-                    <td>Chest</td>
+                    <td>Arms and Shoulders</td>
                 </tr>
                 <tr>
                     <th>Wednesday</th>
-                    <td>Back and Shoulders</td>
-                </tr>
-                <tr>
-                    <th>Thursday</th>
                     <td>Rest</td>
                 </tr>
                 <tr>
-                    <th>Friday</th>
+                    <th>Thursday</th>
                     <td>Legs</td>
                 </tr>
                 <tr>
+                    <th>Friday</th>
+                    <td>Chest and Arms</td>
+                </tr>
+                <tr>
                     <th>Saturday</th>
-                    <td>Arms</td>
+                    <td>Back and Shoulders</td>
                 </tr>
                 <tr>
                     <th>Sunday</th>
@@ -40,4 +40,4 @@ const ThreeTimes = () => {
 
 }
 
-export default ThreeTimes;
+export default FiveTimes;

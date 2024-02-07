@@ -6,6 +6,7 @@ import SecondPage from './Containers/SecondPage';
 import { useState } from 'react';
 import MainPage from './Containers/MainPage';
 import WorkoutPlan from './Containers/WorkoutPlan';
+import DietPlan from './Containers/DietPlan';
 
 function App() {
 
@@ -38,6 +39,9 @@ const [weight, setWeight] = useState(null);
           <Route path='/WorkoutPlan'
           element={<WorkoutPlan />}
           key={4}/>
+          <Route path='/DietPlan'
+          element={<DietPlan />}
+          key={5}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -2,5 +2,31 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    
+    justify-content: space-around;
+    width: 100vw;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+.btns button {
+    width: 33vw;
+    background: none;
+    height: 10vh;
+    border: none;
+    font-size: 8vh;
+}
+
+.btns button:hover {
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 2vw;
+    border-color: gray;
+    background-color: rgb(234, 152, 152);
 }
