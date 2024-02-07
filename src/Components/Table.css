@@ -1,0 +1,13 @@
+.table {
+    width: 100vw;
+    height: 20vh;
+}
+
+.table th {
+    border: 1px solid;
+    background-color: red;
+    margin-bottom: 5vh;
+}
+.table td {
+    border: 1px solid;
+}
