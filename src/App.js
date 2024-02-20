@@ -10,9 +10,10 @@ import DietPlan from './Containers/DietPlan';
 
 function App() {
 
-const [name, setName] = useState("");
-const [selectedAge, setSelectedAge] = useState("Empty");
-const [weight, setWeight] = useState(null);
+  const [user, setUser] = useState(null);
+// const [name, setName] = useState("");
+// const [selectedAge, setSelectedAge] = useState("Empty");
+// const [weight, setWeight] = useState(null);
 
   return (
     <div className="App">
@@ -23,18 +24,12 @@ const [weight, setWeight] = useState(null);
           key={1}/>
           <Route path='/information' 
           element={<SecondPage 
-            name={name}
-            setName={setName}
-            selectedAge={selectedAge}
-            setSelectedAge={setSelectedAge}
-            weight={weight}
-            setWeight={setWeight}/>} 
+          user={user}
+          setUser={setUser}/>} 
           key={2}/>
           <Route path='/MainPage' 
           element={<MainPage 
-          name={name}
-          weight={weight}
-          selectedAge={selectedAge}/>} 
+          user={user}/>} 
           key={3}/>
           <Route path='/WorkoutPlan'
           element={<WorkoutPlan />}
