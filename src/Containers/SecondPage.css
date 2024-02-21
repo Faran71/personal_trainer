@@ -17,6 +17,30 @@
     color: bisque;
 }
 
+.log-in-form {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: space-between;
+}
+
+.log-in-form input {
+    height: 5vh;
+    border-radius: 100vh;
+    text-align: center;
+}
+
+.log-in-form button {
+    height: 5vh;
+    border-radius: 100vh;
+    background-color: white;
+}
+
+.log-in-form button:hover{
+    background-color: red;
+    border-color: black;
+}
+
 .main-info {
     display: flex;
     flex-direction: column;
