@@ -1,0 +1,11 @@
+.workout-individual {
+    border-color: aqua;
+    border-style: solid;
+    width: 80vw;
+    text-align: center;
+}
+
+.description {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

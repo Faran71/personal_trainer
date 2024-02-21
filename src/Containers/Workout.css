@@ -1,0 +1,7 @@
+.workouts-box {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    border-style: solid;
+}

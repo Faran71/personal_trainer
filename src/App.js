@@ -7,13 +7,11 @@ import { useState } from 'react';
 import MainPage from './Containers/MainPage';
 import WorkoutPlan from './Containers/WorkoutPlan';
 import DietPlan from './Containers/DietPlan';
+import Workout from './Containers/Workout';
 
 function App() {
 
   const [user, setUser] = useState(null);
-// const [name, setName] = useState("");
-// const [selectedAge, setSelectedAge] = useState("Empty");
-// const [weight, setWeight] = useState(null);
 
   return (
     <div className="App">
@@ -37,6 +35,10 @@ function App() {
           <Route path='/DietPlan'
           element={<DietPlan />}
           key={5}/>
+          <Route path='/Workout'
+          element={<Workout 
+          user={user}/>}
+          key={6}/>
         </Routes>
       </BrowserRouter>
     </div>

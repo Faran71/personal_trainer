@@ -6,6 +6,11 @@ const MainPage = ({user}) => {
 
     const handleWorkoutClick = (event) => {
         event.preventDefault();
+        navigate("/Workout");
+    }
+
+    const handleWorkoutPlanClick = (event) => {
+        event.preventDefault();
         navigate("/WorkoutPlan")
     }
 
@@ -21,8 +26,9 @@ const MainPage = ({user}) => {
                 <h1>You weight {user.weight}kg</h1>
             </div>
             <div className="options">
+                <button className="workout" onClick={handleWorkoutClick}>Record a Workout</button>
                 <button className="diet" onClick={handleDietClick}>Diet Plans</button>
-                <button className="workout" onClick={handleWorkoutClick}>Workout Plans</button>
+                <button className="workout-plan" onClick={handleWorkoutPlanClick}>Workout Plans</button>
                 <button className="excercise">Explore Excercises</button>
             </div>
             
