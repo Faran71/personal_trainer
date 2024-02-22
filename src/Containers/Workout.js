@@ -1,6 +1,6 @@
-import Calendar from "react-calendar"
 import IndividualWorkout from "../Components/IndividualWorkout"
 import "./Workout.css"
+import CalendarComponent from "../Components/CalendarComponent"
 
 const Workout = ({user}) => {
 
@@ -15,12 +15,12 @@ const Workout = ({user}) => {
     return(
         <div>
             <p>workout</p>
-            <Calendar user={user}/>
-            <div className="workouts-box">
-                {displayWorkouts}
-            </div>
+            <CalendarComponent user={user} />
+            {user.workouts.length === 0 ? <p>No Workouts on Record</p>: <div className="workouts-box">{displayWorkouts}</div>}
         </div>
     )
+
+    
 
 }
 
