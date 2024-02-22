@@ -1,25 +1,34 @@
 .calendar-wrapper {
-    max-width: 400px; /* Optional: Set a maximum width for the calendar */
     margin: 0 auto; /* Center the calendar horizontally */
-  }
-  
-  .react-calendar {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.react-calendar {
     max-width: 100%;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
-  }
-  
-  .react-calendar__tile--active {
+}
+
+.react-calendar__tile--active {
     background-color: #007bff;
     color: #fff;
-  }
-  
-  .special-date {
+}
+
+.special-date {
     background-color: #ff6347; /* Reddish background color */
     color: white;
     padding: 2px 5px;
     border-radius: 50%;
-  }
+}
+
+.custom-calendar .react-calendar__tile {
+    /* Custom dimensions for each date cell */
+    width: 5vh;
+    height: 5vh;
+    line-height: 2.5vh; /* Center content vertically */
+}

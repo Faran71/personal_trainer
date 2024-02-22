@@ -1,9 +1,19 @@
 .workout-individual {
     border-color: aqua;
     border-style: solid;
+    border-radius: 20px;
     width: 80vw;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* height: 10vh; */
+    margin-top: 1vh;
 }
+
+.workout-individual h3, p {
+    height: 2vh;
+}
+
 
 .description {
     display: grid;

@@ -1,9 +1,32 @@
+.workout-main {
+    height: 100vh;
+}
 .workouts-box {
     display: flex;
     flex-direction: column;
     width: 100vw;
     align-items: center;
-    border-style: solid;
-    border-color: black;
+    /* border-style: solid; */
+    /* border-color: black; */
+    height: 52vh;
+    overflow: scroll;
 }
+
+.workout-top {
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.workout-top h2{
+    width: 40vw;
+    font-size: large;
+}
+
+.workout-top h2:hover{
+    color: red;
+}
+
+
 

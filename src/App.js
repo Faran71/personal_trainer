@@ -37,7 +37,8 @@ function App() {
           key={5}/>
           <Route path='/Workout'
           element={<Workout 
-          user={user}/>}
+          user={user}
+          setUser={setUser}/>}
           key={6}/>
         </Routes>
       </BrowserRouter>

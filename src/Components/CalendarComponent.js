@@ -32,6 +32,7 @@ const CalendarComponent = () => {
           onChange={onChange}
           value={date}
           tileContent={tileContent}
+          className="custom-calendar"
         />
       </div>
     );
