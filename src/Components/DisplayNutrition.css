@@ -1,0 +1,14 @@
+.table-nutrition {
+    display: flex;
+    flex-wrap: wrap;
+    width: 64vw;
+    align-items: center;
+}
+
+.table-nutrition p {
+    width: 30vw;
+    height: 4vh;
+    border-style: solid;
+    margin: 0;
+    padding-left: 1vw;
+}

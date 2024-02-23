@@ -19,12 +19,11 @@
     color: #fff;
 }
 
-.special-date {
+.important-date {
     background-color: #ff6347; /* Reddish background color */
     color: white;
-    padding: 2px 5px;
     border-radius: 50%;
-}
+  }
 
 .custom-calendar .react-calendar__tile {
     /* Custom dimensions for each date cell */

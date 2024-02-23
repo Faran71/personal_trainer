@@ -1,42 +1,74 @@
+import DisplayNutrition from "../Components/DisplayNutrition";
+import "./DietPlan.css"
+
 import { useState } from "react";
 
 const DietPlan = () => {
 
+    const [hideValidTag, setHideValidTag] = useState(true);
+
     const [search, setSearch] = useState("");
-    const [recipe, setRecipe] = useState(null);
+    const [nutrition, setNutrition] = useState({
+        "items":[{
+        "name": "None",
+        "calories": 0,
+        "serving_size_g": 0,
+        "fat_total_g": 0,
+        "fat_saturated_g": 0,
+        "protein_g": 0,
+        "sodium_mg": 0,
+        "potassium_mg": 0,
+        "cholesterol_mg": 0,
+        "carbohydrates_total_g": 0,
+        "fiber_g": 0,
+        "sugar_g": 0
+      }]});
 
     // Not working
-    const getRecipe = async (search) => {
-        const newResponse = await fetch(`https://api.calorieninjas.com/v1/recipe?query=${search}`,{
+    const getNutrition = async (search) => {
+        const newResponse = await fetch(`https://api.calorieninjas.com/v1/nutrition?query=${search}`,{
             method: "GET",
             headers: {'X-Api-Key':'EoE9Vfi9YlG4Q7OHKPYGOg==iDoP16NR6Snt1UNx',
             "Content-Type": "application/json"}
         })
         const newR = await newResponse.json();
-        setRecipe(newR);
+        if(newR.items.length === 0){
+            setHideValidTag(false);
+        } else {
+            setNutrition(newR);
+            setSearch("");
+        }
     }
 
-    const handleClick = (event) => {
-        event.precentDefault();
-        getRecipe("mushroom risotto");
+    const handleFormSubmit = (event) => {
+        if(search !== ""){
+            event.preventDefault();
+            getNutrition(search);
+            setHideValidTag(true);
+        } else {
+            setHideValidTag(false);
+        }
     }
 
-    if(recipe){
-        return(
-            <div>
-                <button onClick={handleClick}>Click</button>
-                <p>{recipe[0].title}</p>
+
+    return(
+        <div className="main-diet-page">
+            <form onSubmit={handleFormSubmit}>
+                <h3>Enter a term to find its nutritional values</h3>
+                <input type="text" 
+                name="search"
+                placeholder="Enter..."
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                />
+                <button type="submit">Click</button>
+                <p hidden={hideValidTag}>Please enter a valid expression</p>
+            </form>
+            <div className="display">
+                <DisplayNutrition item={nutrition.items[0]}/>
             </div>
-        )
-    } else {
-        return(
-            <div>
-                <button onCLick={handleClick}>Click</button>
-                <h1>No Recipe</h1>
-            </div>
-        )
-    }
-    
+        </div>
+    )
 
 }
 

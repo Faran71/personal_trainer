@@ -6,20 +6,18 @@ import "./CalendarComponent.css"
 const CalendarComponent = () => {
     const [date, setDate] = useState(new Date());
   
-    // Object with special dates and their messages
-    const specialDates = {
-      '2024-02-14': 'Valentine\'s Day',
-      '2024-04-01': 'April Fools\' Day',
-      // Add more special dates as needed
-    };
+    const importantDates = [
+      new Date('2024-02-14'),
+      new Date('2024-04-01'),
+      // Add more important dates as needed
+    ];
   
-    const tileContent = ({ date }) => {
-      const formattedDate = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
-      return specialDates[formattedDate] && (
-        <div className="special-date">
-          {specialDates[formattedDate]}
-        </div>
-      );
+    const tileClassName = ({ date, view }) => {
+      // Check if the date is in the array of important dates
+      if (importantDates.find(d => d.toDateString() === date.toDateString())) {
+        return 'important-date';
+      }
+      return null;
     };
   
     const onChange = (newDate) => {
@@ -31,7 +29,7 @@ const CalendarComponent = () => {
         <Calendar
           onChange={onChange}
           value={date}
-          tileContent={tileContent}
+          tileClassName={tileClassName}
           className="custom-calendar"
         />
       </div>
