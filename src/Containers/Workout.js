@@ -119,8 +119,9 @@ const Workout = ({user, setUser}) => {
                         <p hidden={hideFillAllMessage} style={{color:"black"}}>Fill in all Fields</p>
                     </form>
                 </Modal>
-            </div>
+            
             <CalendarComponent user={user} />
+            </div>
             {user.workouts.length === 0 ? <p>No Workouts on Record</p>: <div className="workouts-box">{displayWorkouts}</div>}
         </div>
     )

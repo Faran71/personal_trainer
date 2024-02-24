@@ -1,14 +1,32 @@
 .table-nutrition {
     display: flex;
     flex-wrap: wrap;
-    width: 64vw;
+    width: 50vw;
     align-items: center;
+    font-size: larger;
 }
 
 .table-nutrition p {
-    width: 30vw;
-    height: 4vh;
+    width: 20vw;
+    height: 5vh;
     border-style: solid;
     margin: 0;
     padding-left: 1vw;
+}
+
+@media (max-width:768px) {
+    .table-nutrition {
+        display: flex;
+        flex-wrap: wrap;
+        width: 64vw;
+        align-items: center;
+        font-size: medium;
+    }
+    .table-nutrition p {
+        width: 30vw;
+        height: 4vh;
+        border-style: solid;
+        margin: 0;
+        padding-left: 1vw;
+    }
 }

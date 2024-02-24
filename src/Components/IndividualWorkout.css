@@ -2,7 +2,7 @@
     border-color: aqua;
     border-style: solid;
     border-radius: 20px;
-    width: 80vw;
+    width: 40vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -18,4 +18,18 @@
 .description {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width:768px) {
+    .workout-individual {
+        border-color: aqua;
+        border-style: solid;
+        border-radius: 20px;
+        width: 80vw;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* height: 10vh; */
+        margin-top: 1vh;
+    }
 }

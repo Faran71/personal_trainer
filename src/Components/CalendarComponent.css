@@ -1,9 +1,4 @@
-.calendar-wrapper {
-    margin: 0 auto; /* Center the calendar horizontally */
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-}
+
 
 .react-calendar {
     max-width: 100%;
@@ -22,12 +17,22 @@
 .important-date {
     background-color: #ff6347; /* Reddish background color */
     color: white;
-    border-radius: 50%;
+    border-radius: 1000vw;
   }
 
 .custom-calendar .react-calendar__tile {
     /* Custom dimensions for each date cell */
-    width: 5vh;
-    height: 5vh;
-    line-height: 2.5vh; /* Center content vertically */
+    width: 10vw;
+    height: 8vh;
+    line-height: 6vh; /* Center content vertically */
+}
+
+@media (max-width:768px) {
+    .custom-calendar .react-calendar__tile {
+        /* Custom dimensions for each date cell */
+        width: 5vh;
+        height: 5vh;
+        line-height: 2.5vh; /* Center content vertically */
+    }
+
 }
