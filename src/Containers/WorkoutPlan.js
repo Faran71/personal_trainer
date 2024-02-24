@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FourTimes from "../Components/FourTimes";
 import ThreeTimes from "../Components/ThreeTimes";
 import "./WorkoutPlan.css"
 import FiveTimes from "../Components/FiveTimes";
 
-const WorkoutPlan = () => {
 
+
+const WorkoutPlan = () => {
+    
     const [numberOfDays, setNumberOfDays] = useState(3)
 
     const numberOfDaysSelected = () => {
