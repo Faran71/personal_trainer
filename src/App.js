@@ -8,6 +8,7 @@ import MainPage from './Containers/MainPage';
 import WorkoutPlan from './Containers/WorkoutPlan';
 import DietPlan from './Containers/DietPlan';
 import Workout from './Containers/Workout';
+import Exercise from './Containers/Exercise';
 
 function App() {
 
@@ -40,6 +41,11 @@ function App() {
           user={user}
           setUser={setUser}/>}
           key={6}/>
+          <Route path='/Exercise'
+          element={<Exercise
+          user={user}
+          setUser={setUser}/>}
+          key={7}/>
         </Routes>
       </BrowserRouter>
     </div>

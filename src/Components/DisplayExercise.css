@@ -1,0 +1,37 @@
+.exercise-main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 11vh;
+}
+
+.exercise-top {
+    display: flex;
+    flex-direction: row;
+    width: 99vw;
+    height: 10vh;
+    /* overflow-y: hidden; */
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.exercise-top p {
+    width: 33vw;
+    text-align: center;
+}
+.exercise-middle {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.exercise-bottom {
+    width: 90vw;
+    height: 20vh;
+    display: flex;
+    padding-left: 5vh;
+}

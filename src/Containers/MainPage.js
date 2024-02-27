@@ -19,6 +19,11 @@ const MainPage = ({user}) => {
         navigate("/DietPlan");
     }
 
+    const handleExerciseClick = (event) => {
+        event.preventDefault();
+        navigate("/Exercise");
+    }
+
     return(
         <div>
             <div className="top">
@@ -29,7 +34,7 @@ const MainPage = ({user}) => {
                 <button className="workout" onClick={handleWorkoutClick}>Record a Workout</button>
                 <button className="diet" onClick={handleDietClick}>Diet Plans</button>
                 <button className="workout-plan" onClick={handleWorkoutPlanClick}>Workout Plans</button>
-                <button className="excercise">Explore Excercises</button>
+                <button className="exercise" onClick={handleExerciseClick}>Explore Exercises</button>
             </div>
             
         </div>

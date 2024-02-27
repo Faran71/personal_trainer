@@ -24,7 +24,7 @@ const DietPlan = () => {
         "sugar_g": 0
       }]});
 
-    // Not working
+    
     const getNutrition = async (search) => {
         const newResponse = await fetch(`https://api.calorieninjas.com/v1/nutrition?query=${search}`,{
             method: "GET",
@@ -41,8 +41,8 @@ const DietPlan = () => {
     }
 
     const handleFormSubmit = (event) => {
+        event.preventDefault();
         if(search !== ""){
-            event.preventDefault();
             getNutrition(search);
             setHideValidTag(true);
         } else {

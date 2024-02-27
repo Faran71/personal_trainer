@@ -120,7 +120,7 @@ const Workout = ({user, setUser}) => {
                     </form>
                 </Modal>
             
-            <CalendarComponent user={user} />
+                <CalendarComponent user={user} className="calendar" />
             </div>
             {user.workouts.length === 0 ? <p>No Workouts on Record</p>: <div className="workouts-box">{displayWorkouts}</div>}
         </div>

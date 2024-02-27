@@ -27,12 +27,14 @@
 
 .log-in-form input {
     height: 5vh;
+    width: 40vw;
     border-radius: 100vh;
     text-align: center;
 }
 
 .log-in-form button {
     height: 5vh;
+    width: 40vw;
     border-radius: 100vh;
     background-color: white;
 }

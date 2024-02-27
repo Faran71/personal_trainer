@@ -51,10 +51,10 @@
     color: white;
 }
 
-.excercise {
+.exercise {
     transition: background-image 0.3s ease-in-out;
 }
-.excercise:hover {
+.exercise:hover {
     background-image: url("../../public/excercise.jpg");
     background-size: cover;
     background-position: center;
