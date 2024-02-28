@@ -9,6 +9,7 @@ import WorkoutPlan from './Containers/WorkoutPlan';
 import DietPlan from './Containers/DietPlan';
 import Workout from './Containers/Workout';
 import Exercise from './Containers/Exercise';
+import { server } from 'websocket';
 
 function App() {
 
@@ -28,7 +29,8 @@ function App() {
           key={2}/>
           <Route path='/MainPage' 
           element={<MainPage 
-          user={user}/>} 
+          user={user}
+          setUser={setUser}/>} 
           key={3}/>
           <Route path='/WorkoutPlan'
           element={<WorkoutPlan />}

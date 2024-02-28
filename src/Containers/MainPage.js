@@ -1,8 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import "./MainPage.css"
+import SideBar from "../Components/SideBar";
+import { useState } from "react";
 
-const MainPage = ({user}) => {
+const MainPage = ({user, setUser}) => {
     const navigate = useNavigate();
+
+    const [sidebarOpen, setSideBarOpen] = useState(false);
+    const handleViewSidebar = () => {
+        setSideBarOpen(!sidebarOpen);
+    };
 
     const handleWorkoutClick = (event) => {
         event.preventDefault();
@@ -27,8 +34,12 @@ const MainPage = ({user}) => {
     return(
         <div>
             <div className="top">
-                <h1>Hi {user.name}</h1>
-                <h1>You weight {user.weight}kg</h1>
+                <h1 onClick={handleViewSidebar} className="name">Hi {user.name}</h1>
+                <h1>Workout count: {user.workouts.length}</h1>
+                <SideBar isOpen={sidebarOpen} 
+                toggleSidebar={handleViewSidebar}
+                user={user}
+                setUser={setUser}/>
             </div>
             <div className="options">
                 <button className="workout" onClick={handleWorkoutClick}>Record a Workout</button>

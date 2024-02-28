@@ -1,0 +1,50 @@
+.sidebar {
+    position: absolute;
+    bottom: 0;
+    left: -20vw;
+    height: 90vh;
+    width: 20vw;
+    transition: left 0.3s ease-in-out;
+    background-color: red;
+    text-align: center;
+}
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar-main button {
+    width: 20vw;
+    background: none;
+    border: none;
+    margin-top: 5vh;
+    text-decoration: underline;
+}
+
+.sidebar-main button:hover {
+    background-color: white;
+}
+
+.modal-form {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-form input {
+    width: 40vw;
+    height: 7vh;
+}
+
+.modal-form button {
+    width: 41vw;
+    height: 7vh;
+    background-color: red;
+}
+
+.modal-form button:hover {
+    background-color: whitesmoke;
+    color: red;
+}

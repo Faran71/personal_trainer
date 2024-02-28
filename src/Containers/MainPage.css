@@ -7,6 +7,10 @@
     background-color: red;
 }
 
+.name:hover {
+    color: white;
+}
+
 .options {
     display: flex;
     flex-direction: column;
@@ -28,35 +32,15 @@
     background-color: white;
     color: red;
 }
-
-.diet {
-    /* background-color: beige; */
-    transition: background-image 0.3s ease-in-out;
-}
-
 .diet:hover {
-    background-image: url("../../public/food.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-.workout-plan {
-    transition: background-image 0.3s ease-in-out;
+    background-color: white;
+    color: red;
 }
 .workout-plan:hover {
-    background-image: url("../../public/workout.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
-}
-
-.exercise {
-    transition: background-image 0.3s ease-in-out;
+    background-color: white;
+    color: red;
 }
 .exercise:hover {
-    background-image: url("../../public/excercise.jpg");
-    background-size: cover;
-    background-position: center;
-    color: white;
+    background-color: white;
+    color: red;
 }
