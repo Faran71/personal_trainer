@@ -45,7 +45,7 @@ const putPasswordChange = async (user, password, newPassword) => {
         password: password,
         newPassword: newPassword
     }
-    const newResponse = await fetch(`http://localhost:8080/users/changePassword`,{
+    const newResponse = await fetch(`https://personal-trainer-backend.onrender.com/users/changePassword`,{
         method: "PUT",
         headers: {"Content-Type": "application/json"},
         body:JSON.stringify(temp)

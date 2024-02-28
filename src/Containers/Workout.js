@@ -47,7 +47,7 @@ const Workout = ({user, setUser}) => {
             duration: duration,
             description: description
         }
-        const newResponse = await fetch(`http://localhost:8080/workouts/postWorkout/${user.id}`,{
+        const newResponse = await fetch(`https://personal-trainer-backend.onrender.com/workouts/postWorkout/${user.id}`,{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body:JSON.stringify(temp)

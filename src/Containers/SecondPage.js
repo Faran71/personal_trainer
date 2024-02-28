@@ -38,7 +38,7 @@ const SecondPage = ({user, setUser}) => {
             email: logInEmail,
             password: logInPassword
         }
-        const newResponse = await fetch(`http://localhost:8080/users/authenticate`,{
+        const newResponse = await fetch(`https://personal-trainer-backend.onrender.com/users/authenticate`,{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body:JSON.stringify(temp)
@@ -79,7 +79,7 @@ const SecondPage = ({user, setUser}) => {
             weight: weight,
             selectedAge: selectedAge
         }
-        const newResponse = await fetch(`http://localhost:8080/users`,{
+        const newResponse = await fetch(`https://personal-trainer-backend.onrender.com/users`,{
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body:JSON.stringify(temp)
