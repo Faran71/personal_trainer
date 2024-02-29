@@ -8,7 +8,7 @@ import FiveTimes from "../Components/FiveTimes";
 
 const WorkoutPlan = () => {
     
-    const [numberOfDays, setNumberOfDays] = useState(3)
+    const [numberOfDays, setNumberOfDays] = useState(0)
 
     const numberOfDaysSelected = () => {
         if(numberOfDays === 3){
@@ -31,8 +31,8 @@ const WorkoutPlan = () => {
             )
         } else {
             return(
-                <div>
-                    <h1>Pick a number to configure you week plan</h1>
+                <div className="no-days">
+                    <h1>Pick the number of days you want to workout to configure you week plan</h1>
                 </div>
             )
         }

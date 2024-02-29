@@ -25,10 +25,22 @@
     text-align: center;
 }
 
-.main-diet-page form h3, input, button {
+.main-diet-page form h3, input {
     height: 8vh;
     font-size: larger;
     width: 40vw;
+}
+
+.main-diet-page form button {
+    height: 6vh;
+    font-size: larger;
+    width: 40vw;
+    background-color: red;
+    color: white;
+}
+.main-diet-page form button:hover {
+    background-color: white;
+    color: red;
 }
 
 @media (max-width:768px) {

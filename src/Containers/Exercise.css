@@ -1,5 +1,6 @@
 .exercise-main-page {
     height: 100vh;
+    font-size: 2vh;
 }
 
 .exercise-main-page form {
@@ -7,6 +8,8 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
     align-items: center;
 }
 
@@ -15,8 +18,16 @@
     height: 5vw;
 }
 .exercise-main-page form button {
-    width: 41vw;
-    height: 5vw;
+    width: 40.5vw;
+    height: 6vw;
+    background-color: red;
+    color: white;
+    font-size: 2vh;
+}
+
+.exercise-main-page form button:hover {
+    background-color: white;
+    color: red;
 }
 .exercises-box {
     height: 75vh;

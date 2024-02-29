@@ -24,14 +24,16 @@
 .exercise-middle {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 102vw;
     justify-content: space-around;
     align-items: center;
-    background-color: antiquewhite;
+    background-color: white;
+    color: red;
 }
 .exercise-bottom {
     width: 90vw;
     height: 20vh;
     display: flex;
     padding-left: 5vh;
+    color: white;
 }

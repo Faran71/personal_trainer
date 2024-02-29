@@ -2,7 +2,9 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10vh;
+    align-items: center;
     width: 100vw;
 }
 
@@ -28,5 +30,13 @@
     border-right: none;
     margin-bottom: 2vw;
     border-color: gray;
-    background-color: rgb(234, 152, 152);
+    background-color: red;
+}
+
+.no-days {
+    width: 60vw;
+    font-size: 2vh;
+    text-align: center;
+    background-color: red;
+    color: white;
 }

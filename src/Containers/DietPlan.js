@@ -54,14 +54,14 @@ const DietPlan = () => {
     return(
         <div className="main-diet-page">
             <form onSubmit={handleFormSubmit}>
-                <h3>Enter a term to find its nutritional values</h3>
+                <h3>Enter a food item to find its nutritional values</h3>
                 <input type="text" 
                 name="search"
                 placeholder="Enter..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 />
-                <button type="submit">Click</button>
+                <button type="submit">Search</button>
                 <p hidden={hideValidTag}>Please enter a valid expression</p>
             </form>
             <div className="display">
